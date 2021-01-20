@@ -16,54 +16,54 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
 
     <title>The Interior</title>
 
-    <!-- <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style> -->
+    <link rel="stylesheet" href="./CSS/style.css">
   </head>
   <body>
     <div class="container">
-
+      <header class="header">
+        <div class="logo">
+          <span id="logo">This Interiror</span>
+        </div>
+          <ul class="nav__list">
+            <li class="list__items"><a href="#" class="nav__links">home</a></li>
+            <li class="list__items"><a href="#" class="nav__links">collection</a></li>
+            <li class="list__items"><a href="#" class="nav__links">about</a></li>
+            <li class="list__items"><a href="#" class="nav__links">contacts</a></li>
+          </ul>
+        <button class="btn"><span class="ham-icon"></span></button>
+      </header>
+      <section class="main">
+        <div class="text-section">
+          <h1 class="text-section__heading">Modern Interior</h1>
+          <p class="text-section__desc">A full-Service residential & commercial interior design and staging company offering professional organizing & <br/>
+          eco-services.</p>
+          <button type="submit" class="btn">Read more <span id="go"><i class="fas fa-long-arrow-alt-right"></i></span> </button>
+        </div>
+        <div class="illustration">
+          <figure>
+            <img src="./photo1.png" alt="" class="">
+          </figure>
+          <div class="creator">
+            <div class="main">
+              <figure>
+                <img src="./photo2.png" alt="">
+              </figure>
+              <p class="name">Aliza webber</p>
+              <p class="tag">Interior designer</p>
+            </div>
+            <div class="headliner">
+              <h2>Designed in 2020 by Aliza Webber</h2>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
-~
