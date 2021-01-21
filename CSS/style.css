@@ -32,6 +32,8 @@ body {
     height: 100%;
 }
 
+/* nav section */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +64,7 @@ body {
     margin-right: 86px;
 }
 
-.nav__links {
+.nav__link {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -73,6 +75,109 @@ body {
 
 .header .btn {
     display: none;
+}
+
+@media only screen and (max-width: 789px) {
+    nav {
+        transform: translatex(100%);
+        top: 0;
+        /* left: 0; */
+        /* bottom: 0; */
+        right: 0;
+        position: fixed;
+        z-index: 100;
+        background: #000;
+        color: #fff;
+        transition: all 0.5s cubic-bezier(0, 1.88, 1, 1.22);
+        height: 50%;
+        width: 50%;
+    }
+
+    .header .btn {
+        display: block;
+    }
+
+    .nav-toggle {
+        position: absolute;
+        padding: 1em;
+        top: 4em;
+        right: 2em;
+        background: transparent;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .nav__list li:not(:last-child) {
+    margin-right: 0!important;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 57px 0;
+    }
+
+    .acive .nav-toggle {
+        position: fixed;
+    }
+
+    .active nav{
+        transform: translatex(0);
+    }
+
+    /* the humburger */
+
+    .ham--icon {
+        display: block;
+        position: relative;
+    }
+
+    .ham--icon,
+    .ham--icon::before,
+    .ham--icon::after {
+        width: 25.5px;
+        background: #fff;
+        height: 3px;
+        border-radius: 2px;
+    }
+
+    .ham--icon::after,
+    .ham--icon::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .ham--icon::before {
+        transform: translateY(-6px);
+    }
+
+    .ham--icon::after {
+        transform: translateY(6px)
+    }
+
+    .active .ham--icon {
+        transform: translateX(-6px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .active .ham--icon::before {
+        transform: rotate(45deg) translate(10px, -10px);
+    }
+
+    .active .ham--icon::after {
+        transform: rotate(-45deg) translate(10px, 10px);
+    }
+
+    .main-pic img {
+        width: 717px!important;
+        height: 535px!important;
+    }
 }
 
 .main {
@@ -122,7 +227,7 @@ body {
     
 }
 
-.main-pic img {
+.illustration > .main-pic img {
     width: 737px;
     height: 555px;
     border-radius: 5px;
@@ -174,3 +279,4 @@ footer p {
 footer a:hover {
     color: blue
 }
+
