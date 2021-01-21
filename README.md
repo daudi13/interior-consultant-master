@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/daudi13/interior-consultant-master/blob/main/Screenshot%20from%202021-01-21%2015-05-33.png)
 
 You can check my demo at [Vercel](https://interior-consultant-master-jade.vercel.app/). The project invovled building a minimalistic landing page for an imaginary interior design company called This Interior. Check it out and enjoy. All comments and feedback are welcome.
 
@@ -64,5 +64,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/daudi13)
-- Twitter [@your-twitter](https://twitter.com/davouma)
+- GitHub [@daudi13](https://github.com/daudi13)
+- Twitter [@davouma](https://twitter.com/davouma)
