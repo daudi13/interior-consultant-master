@@ -77,6 +77,7 @@ body {
 }
 
 
+
 .header .btn {
     display: none;
 }
@@ -241,6 +242,28 @@ body {
     height: 555px;
     border-radius: 5px;
     } 
+
+    .nav__link {
+        position: relative;
+    }
+
+    .nav__link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: scalex(0);
+        width: 100%;
+        background-color: teal;
+        height: 2px;
+        transform-origin: center;
+        transition: all 0.5s ease;
+    }
+
+    .nav__link:hover::after {
+        transform: scale(1);
+        transform-origin: center;
+    }
 }
 
 
@@ -290,6 +313,24 @@ body {
     margin-left: 15px;
     transform: translateY(10%);
     
+}
+
+.text-section .btn::after {
+    content: '';
+    width: 130%;
+    height: 1.5px;
+    background-color: green;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: all 0.1s ease;
+    transform-origin: left;
+}
+
+.text-section .btn:hover::after {
+    transform:scaleX(1);
+    transform-origin: right;
 }
 
 
